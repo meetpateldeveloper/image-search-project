@@ -9,7 +9,7 @@ function App() {
     setResultArray(await getPictureApi(userInput));
   };
   return (
-    <div>
+    <div className="body">
       <SearchBar onSubmit={handleSubmit} />
       <ImageList resultArray={resultArray} />
     </div>
